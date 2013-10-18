@@ -225,6 +225,7 @@ class ZiPatcher{
   	**/
   	
   	function buildPackage(){
+  		require_once('include/upload_file.php');
   		$this->props['name'] = (!empty($_REQUEST['name']))?$_REQUEST['name']:'package';
   		$this->props['description'] = (!empty($_REQUEST['description']))?$_REQUEST['description']:'';
   		$this->props['uninstall'] = (!empty($_REQUEST['uninstall']))?'true':'false';
